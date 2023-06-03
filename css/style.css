@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.colors {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  margin-left: 20px;
+  z-index: 999;
+}
+.color-list {
+  position: relative;
+  & input {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    &:checked + label {
+      box-sizing: border-box;
+      border: 1px solid brown;
+    }
+  }
+}
+.color-label {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#brown-macaron + label {
+  background-color: brown;
+}
+#green-macaron + label {
+  background-color: green;
+}
+#yellow-macaron + label {
+  background-color: yellow;
+}
+#white-macaron + label {
+  background-color: white;
+}
+#pink-macaron + label {
+  background-color: pink;
+}
+
+.macarons {
+  position: relative;
+  top: 100px;
+  left: 40%;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+.macaron-list {
+  display: inline-block;
+}
+
+#brown-macaron-list {
+  transform: matrix(0.8, 0, 0, 0.8, 0, 0);
+}
+#green-macaron-list {
+  transform: matrix(0.86, 0, 0, 0.86, 0, 0);
+}
+#yellow-macaron-list {
+  transform: matrix(0.92, 0, 0, 0.92, 0, 0);
+}
+#white-macaron-list {
+  transform: matrix(0.92, 0, 0, 0.92, 0, 0);
+}
+#pink-macaron-list {
+  transform: matrix(1.12, 0, 0, 1.12, 0, 0);
+}
+
+.macaron-image {
+  max-width: 200px;
+}
